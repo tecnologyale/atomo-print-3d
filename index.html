@@ -8,7 +8,7 @@
   <title>Atomo print 3D — Made in Edmonton, made for you</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{--ink:#000000;--muted:#625f59;--paper:#f0ebe7;--white:#fffdfa;--green:#545521;--orange:#545521;--line:#ddd6d0;--serif:Georgia,serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
@@ -24,6 +24,77 @@
     .contact{background:#000;color:#f0ebe7;padding:76px 0 60px}.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact .eyebrow{color:#d9d6b4}.contact .eyebrow:before{background:#d9d6b4}.contact h2{font-family:Manrope,sans-serif;font-size:clamp(37px,5vw,58px);line-height:1.03;letter-spacing:-.07em;font-weight:500;margin:18px 0 12px}.contact p{font-size:13px;color:#c5c1bc}.contact .button{background:#f0ebe7;color:#000;margin-top:14px}.contact .button:hover{background:white}.social-links{display:flex;flex-direction:column;gap:14px;align-items:flex-end}.insta-mark{font-family:Manrope,sans-serif;font-size:clamp(36px,6vw,75px);font-weight:600;letter-spacing:-.075em;color:#f0ebe7}.facebook-mark{font:600 20px Manrope,sans-serif;color:#f0ebe7;border:1px solid #f0ebe744;border-radius:99px;padding:12px 20px;transition:background .2s,color .2s}.facebook-mark:hover{background:#f0ebe7;color:#000}.foot{border-top:1px solid #ffffff2b;margin-top:56px;padding-top:20px;display:flex;justify-content:space-between;color:#bdb9b3;font-size:10px;letter-spacing:.04em}
     @media(max-width:760px){.wrap{width:min(100% - 34px,540px)}header{height:69px}.nav,.header-cta{display:none}.menu{display:block}.hero{grid-template-columns:1fr;gap:30px;padding:52px 0 54px}.hero h1{font-size:clamp(53px,14vw,75px)}.hero-photo{height:min(108vw,450px);width:90%;margin:0 auto}.photo-tag{left:-14px;bottom:25px}.marquee-inner{justify-content:flex-start;overflow:auto}.marquee-inner span{flex-shrink:0}.section{padding:73px 0}.section-head{display:block}.section-head p{margin-top:15px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:230px}.tile-caption{left:9px;right:9px;bottom:9px;padding:9px 10px}.gallery-foot{line-height:1.5}.custom{padding:61px 0}.custom-grid{grid-template-columns:1fr;gap:32px}.perks{gap:18px}.about{padding:71px 0;grid-template-columns:1fr;gap:6px}.about-copy{padding-top:10px}.contact{padding:61px 0 35px}.contact-grid{align-items:flex-start;flex-direction:column}.insta-mark{font-size:57px}.foot{margin-top:40px;gap:15px;flex-direction:column}}
     @media(max-width:390px){.actions{align-items:flex-start;flex-direction:column;gap:4px}.gallery{grid-auto-rows:190px}}
+  
+    /* Editorial styling inspired by the NUBA reference; all existing copy and links stay in place. */
+    :root{--ink:#282820;--muted:#69675f;--paper:#f3f1eb;--white:#fffefa;--green:#55583a;--orange:#55583a;--line:#dedbd2;--serif:'Cormorant Garamond',Georgia,serif}
+    body{background:var(--paper);color:var(--ink)}
+    .topline{background:#53563a;color:#f3f1eb;letter-spacing:.16em}
+    header{border-color:var(--line)}
+    .brand img{width:152px}
+    .nav{color:#55564d;letter-spacing:.04em}
+    .nav a:hover,.textlink:hover{color:#777b50}
+    .header-cta,.button{background:#272820;color:#f8f6ef}
+    .header-cta:hover,.button:hover{background:#55583a}
+    .eyebrow{color:#55583a}
+    .eyebrow:before{background:#85876b}
+    .hero{padding-top:78px;padding-bottom:83px;gap:64px}
+    .hero h1{font-family:var(--serif);font-size:clamp(60px,7vw,92px);font-weight:500;line-height:.9;letter-spacing:-.045em}
+    .hero h1 em{font-family:var(--serif);font-weight:500;letter-spacing:-.045em}
+    .hero p{font-size:14px;line-height:1.9}
+    .hero-photo{height:500px;display:grid;grid-template-columns:1.08fr .92fr;grid-template-rows:1fr 1fr;gap:13px}
+    .hero-photo img{grid-column:1;grid-row:1 / 3;width:100%;height:100%;object-fit:cover;border-radius:2px;box-shadow:none}
+    .hero-photo:before,.hero-photo:after{content:"";display:block;min-height:0;background-size:cover;background-position:center;border-radius:2px}
+    .hero-photo:before{grid-column:2;grid-row:1;background-image:url("images/IMG_4566.JPG")}
+    .hero-photo:after{grid-column:2;grid-row:2;background-image:url("images/IMG_4583.JPG")}
+    .photo-tag{left:14px;bottom:14px;border-radius:0;box-shadow:none}
+    .marquee{border-color:var(--line);padding:24px 0}
+    .marquee-inner{color:#55583a;letter-spacing:.035em}
+    .marquee i{color:#9a9a79}
+    .section{padding:108px 0}
+    .section-head h2,.about h2,.custom h2,.referrals h2,.contact h2{font-family:var(--serif);font-weight:500;letter-spacing:-.035em}
+    .section-head h2,.about h2{font-size:clamp(42px,5vw,64px);line-height:.96}
+    .section-head{margin-bottom:43px}
+    .section-head p{max-width:350px;line-height:1.85}
+    .gallery{grid-auto-rows:112px;gap:26px 18px}
+    .tile{grid-row:span 3;display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:visible;border-radius:0;background:transparent}
+    .tile:nth-child(4n+2),.tile:nth-child(4n+3){grid-row:span 2}
+    .tile img,.tile video{min-height:0;height:100%;border-radius:2px}
+    .tile:hover img{transform:scale(1.015)}
+    .tile-caption,.tile video~.tile-caption{position:static;align-self:start;background:transparent;padding:11px 0 0;border-radius:0;font-family:'DM Sans',sans-serif;font-size:12px;line-height:1.45}
+    .tile-caption small{font-size:10px;letter-spacing:.04em;margin-top:5px}
+    .gallery-foot{margin-top:27px;padding-top:14px;border-top:1px solid var(--line);letter-spacing:.035em}
+    .custom{background:#e8e5dc;padding:91px 0}
+    .custom h2,.referrals h2,.contact h2{font-size:clamp(46px,5.5vw,70px);line-height:.93}
+    .custom p,.about-copy p,.referrals p{line-height:1.9}
+    .perk{border-color:#c9c7bb;padding-top:17px}
+    .perk b{font-family:var(--serif);font-size:21px;font-weight:600}
+    .number{color:#656947}
+    .about{padding:108px 0;gap:100px}
+    .signature{color:#686b49;font-size:23px}
+    .referrals{background:#55583a;padding:91px 0}
+    .referrals .eyebrow{color:#e9e6d8}
+    .referrals .eyebrow:before{background:#c5c6a7}
+    .reward-card{border-radius:2px;transform:none;box-shadow:0 16px 38px #17180f24}
+    .reward-card .big{font-family:var(--serif);font-weight:600;color:#55583a;letter-spacing:-.04em}
+    .contact{background:#24251f}
+    .contact .eyebrow{color:#d9d8c5}
+    .contact .eyebrow:before{background:#babb9c}
+    .contact .button{background:#e8e5dc;color:#282820}
+    .contact .button:hover{background:#fffefa}
+    .insta-mark{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;color:#e8e5dc}
+    .facebook-mark{border-radius:2px;border-color:#f0ebe744}
+    .foot{letter-spacing:.06em}
+    @media(max-width:760px){
+      .hero{padding-top:52px;gap:30px}
+      .hero h1{font-size:clamp(57px,14vw,82px)}
+      .hero-photo{height:min(105vw,420px);width:100%;gap:9px}
+      .section{padding:78px 0}
+      .gallery{grid-auto-rows:82px;gap:23px 12px}
+      .custom,.referrals{padding:68px 0}
+      .about{padding:78px 0;gap:4px}
+    }
+    @media(max-width:390px){.gallery{grid-auto-rows:74px;gap:20px 10px}}
+  
   </style>
 </head>
 <body>
